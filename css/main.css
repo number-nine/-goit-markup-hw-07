@@ -34,6 +34,7 @@
     background-color: var(--background-primary);
 }
 
+
 /* Container */
 
 .container {
@@ -80,12 +81,27 @@
     color: var(--primary-brand);
 }
 
+/* Link */
+.link {
+    padding-top: 24px;
+    padding-bottom: 24px;
 
-/* Menu */
-.menu {}
+    color: var(--text-main);
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
-.menu__list {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.link:hover,
+.link:focus {
+    color: var(--action-active);
+}
+
+/* List */
+
+.list {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -93,27 +109,20 @@
     list-style: none;
 }
 
+/* Menu */
+.menu {}
+
+.menu__list {
+
+
+}
+
 .menu__item {}
 
 .menu__link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    color: var(--dark);
-    text-decoration: none;
-
+    
     font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.menu__link:hover,
-.menu__link:focus {
-    color: var(--action-active);
 }
 
 .menu__link--current {
@@ -142,7 +151,7 @@
 /* Contacts */
 
 .contacts {
-    font-style: normal;
+    
 }
 
 .contacts__list {}
@@ -151,19 +160,105 @@
 
 .contacts__link {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
 
-    color: var(--text-main);
-    text-decoration: none;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
 
 }
 
-.contacts__link:hover,
-.contact-item:focus {
-    color: var(--action-active);
+/* Button */
+
+.button {
+    display: flex;
+    /* padding: 16px 32px; */
+
+    color: var(--background-primary);
+
+    background-color: var(--primary-brand);
+
+    border-radius: 4px;
+    border: none;
+    
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--action-active);
+
+}
+
+/* Section */
+
+.section {
+    background-color: var(--background-primary);
+}
+
+.section__title {
+
+    margin-top: 0;
+    margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--dark);
+
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+
+.section__content {
+
+}
+
+/* Hero */
+
+.hero {
+
+}
+
+.hero__title {
+
+    max-width: 498px;
+
+    color: var(--background-primary);
+
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+
+}
+
+.hero__content {
+    height: 600px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 188px;
+    background-image:
+        linear-gradient(var(--hero-background), var(--hero-background)),
+        url("../images/people-office-1400x600-opt.jpg");
+
+    /* text-align: center; */
+}
+
+.hero__button {
+    min-width: 169px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }

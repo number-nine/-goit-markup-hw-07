@@ -27,30 +27,30 @@
 
         <nav class="menu">
           <!-- Main navigation -->
-          <ul class="navigation-list list menu__list">
-            <li class="item menu__item">
-              <a href="./index.html" class="menu__link menu__link--current">
+          <ul class="list menu__list">
+            <li class="menu__item">
+              <a href="./index.html" class="link menu__link menu__link--current">
                 Studio
               </a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="menu__link"> Portfolio </a>
+            <li class="menu__item">
+              <a href="./portfolio.html" class="link menu__link"> Portfolio </a>
             </li>
-            <li class="item">
-              <a href="" class="menu__link"> Contacts </a>
+            <li class="menu__item">
+              <a href="" class="link menu__link"> Contacts </a>
             </li>
           </ul>
         </nav>
         <!-- Contacts block. The only address block at present so wrapped with address tag -->
         <address class="contacts">
-          <ul class="contact-list list contacts__list">
-            <li class="item contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
+          <ul class="list contacts__list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="link contacts__link">
                 info@devstudio.com
               </a>
             </li>
-            <li class="item">
-              <a href="tel:+110001111111" class="contacts__link">
+            <li class="contacts__item">
+              <a href="tel:+110001111111" class="link contacts__link">
                 +11 (000) 111-11-11
               </a>
             </li>
@@ -62,9 +62,9 @@
     <main>
       <!-- Hero section -->
       <section class="section hero">
-        <div class="overlay">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button primary" data-modal-open>
+        <div class="hero__content">
+          <h1 class="section__title hero__title">Effective Solutions for Your Business</h1>
+          <button type="button" class="button hero__button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -72,16 +72,16 @@
       <!-- Strengths section -->
       <section class="section strengths">
         <div class="container">
-          <h2 class="section-title visually-hidden">Strengths</h2>
-          <ul class="strengths-list list">
+          <h2 class="section__title visually-hidden">Strengths</h2>
+          <ul class="section__content list">
             <li class="item">
-              <div class="item-picture">
-                <svg class="strengths-icon">
+              <div class="">
+                <svg class="strengths-icon item-picture item__picture">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="item-title">Strategy</h3>
-              <p class="item-text">
+              <h3 class="item-title item__title">Strategy</h3>
+              <p class="item-text item__description">
                 Our goal is to identify the businessproblem to walk away with
                 the perfect and creative solution.
               </p>
@@ -129,8 +129,8 @@
       <!-- Services section -->
       <section class="section services">
         <div class="container">
-          <h2 class="section-title">What are we doing</h2>
-          <ul class="services-list list">
+          <h2 class="section__title">What are we doing</h2>
+          <ul class="section__content list">
             <li class="item">
               <a href="./portfolio.html" class="item-link">
                 <img
@@ -171,8 +171,8 @@
       <!-- Team section -->
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Our Team</h2>
-          <ul class="team-list list">
+          <h2 class="section__title">Our Team</h2>
+          <ul class="section__content list">
             <li class="item">
               <img
                 src="./images/img1-team-264x260-opt.jpg"
@@ -415,7 +415,7 @@
       <!-- Clients section -->
       <section class="section clients">
         <div class="container">
-          <h2 class="section-title">Customers</h2>
+          <h2 class="section__title">Customers</h2>
           <ul class="clients-list list">
             <li class="item">
               <a href="" aria-label="client one" class="client-link">
