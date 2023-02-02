@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-brand: #4D5AE5;
     --action-active: #404BBF;
     --dark: #2E2F42;
@@ -12,24 +12,24 @@
     --subtle-text: #8E8F99;
     --backdrop-bg: rgba(46, 47, 66, 0.4);
     --modal-bg: #FCFCFC;
-}
+} */
 
-body {
+/* body {
 
     color: var(--text-main);
 
     font-family: 'Roboto', sans-serif;
 
-}
+} */
 
-.container {
+/* .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
 
-}
+} */
 
 
 
@@ -224,7 +224,7 @@ body {
 
 /* Logo Elements*/
 
-.logo {
+/* .logo {
 
 
     font-family: 'Raleway', sans-serif;
@@ -237,11 +237,11 @@ body {
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
-.logo .logo-accent {
+/* .logo .logo-accent {
     color: var(--primary-brand);
-}
+} */
 
 .logo.navigation-item {
     margin-right: 76px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link
@@ -13,12 +13,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/main.css" />
     <title>Main page</title>
   </head>
-  <body class="page__body" body-noscroll>
+  <body body-noscroll>
     <!-- Header section -->
-    <header class="header page__header">
+    <header class="header">
       <div class="container">
         <nav class="navigation">
           <!-- Logo -->
@@ -27,7 +26,7 @@
             aria-label="Webstudio home page"
             class="logo navigation-item"
           >
-            <span class="logo-accent logo__accent">Web</span>Studio
+            <span class="logo-accent">Web</span>Studio
           </a>
 
           <!-- Main navigation -->
@@ -473,8 +472,8 @@
         <!-- Logo block-->
         <div class="footer-logo">
           <!-- <h3 class="visually-hidden">Logo</h3> -->
-          <a href="./index.html" aria-label="Webstudio home page" class="logo logo--theme_dark">
-            <span class="logo-accent logo__accent">Web</span>Studio
+          <a href="./index.html" aria-label="Webstudio home page" class="logo">
+            <span class="logo-accent">Web</span>Studio
           </a>
 
           <!-- This part also can be call to action (<b>) but not important at the moment -->
@@ -568,15 +567,13 @@
           type="button"
           aria-label="close modal"
           class="modal-close"
-          data-modal-close
-        >
+          data-modal-close>
           <svg class="close-icon">
             <use href="images/icons.svg#close-modal"></use>
           </svg>
         </button>
         <b class="contact-title"
-          >Leave your contacts and we will call you back</b
-        >
+          >Leave your contacts and we will call you back</b>
         <form action="" class="contact-form" name="contact-form">
           <ul class="list form-list">
             <li class="form-item">
@@ -623,12 +620,7 @@
             </li>
             <li class="form-item">
               <label class="area">
-                <textarea
-                  class="comment-field"
-                  name="comment-field"
-                  placeholder="Text input"
-                  autocomplete="off"
-                ></textarea>
+                <textarea class="comment-field" name="comment-field" placeholder="Text input" autocomplete="off"></textarea>
                 <span class="label">Comment</span>
               </label>
             </li>
@@ -655,8 +647,7 @@
               <button
                 class="button primary"
                 name="contact-submit"
-                type="submit"
-              >
+                type="submit">
                 Send
               </button>
             </li>
