@@ -20,41 +20,37 @@
     <!-- Header section -->
     <header class="header page__header">
       <div class="container">
-        <nav class="navigation">
-          <!-- Logo -->
-          <a
-            href="./index.html"
-            aria-label="Webstudio home page"
-            class="logo navigation-item"
-          >
-            <span class="logo-accent logo__accent">Web</span>Studio
-          </a>
+        <!-- Logo -->
+        <a href="./index.html" aria-label="Webstudio home page" class="logo">
+          <span class="logo__accent">Web</span>Studio
+        </a>
 
+        <nav class="menu">
           <!-- Main navigation -->
-          <ul class="navigation-list list">
-            <li class="item">
-              <a href="./index.html" class="navigation-item current">
+          <ul class="navigation-list list menu__list">
+            <li class="item menu__item">
+              <a href="./index.html" class="menu__link menu__link--current">
                 Studio
               </a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="navigation-item"> Portfolio </a>
+              <a href="./portfolio.html" class="menu__link"> Portfolio </a>
             </li>
             <li class="item">
-              <a href="" class="navigation-item"> Contacts </a>
+              <a href="" class="menu__link"> Contacts </a>
             </li>
           </ul>
         </nav>
         <!-- Contacts block. The only address block at present so wrapped with address tag -->
-        <address>
-          <ul class="contact-list list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="contact-item">
+        <address class="contacts">
+          <ul class="contact-list list contacts__list">
+            <li class="item contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
                 info@devstudio.com
               </a>
             </li>
             <li class="item">
-              <a href="tel:+110001111111" class="contact-item">
+              <a href="tel:+110001111111" class="contacts__link">
                 +11 (000) 111-11-11
               </a>
             </li>
@@ -473,7 +469,11 @@
         <!-- Logo block-->
         <div class="footer-logo">
           <!-- <h3 class="visually-hidden">Logo</h3> -->
-          <a href="./index.html" aria-label="Webstudio home page" class="logo logo--theme_dark">
+          <a
+            href="./index.html"
+            aria-label="Webstudio home page"
+            class="logo logo--theme_dark"
+          >
             <span class="logo-accent logo__accent">Web</span>Studio
           </a>
 
