@@ -49,7 +49,7 @@
 
 
 /* common dark item header */
-.item-title {
+/* .item-title {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -59,18 +59,18 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-}
+} */
 
-.item-text {
+/* .item-text {
     margin-top: 0;
     margin-bottom: 0;
 
-    /* Temporary fix for a text wrapped with link in a team block (styles inherited from user-agent).  */
-    /* Will be deleted because team items doesn't look like a link on next mockups*/
+    Temporary fix for a text wrapped with link in a team block (styles inherited from user-agent). 
+    Will be deleted because team items doesn't look like a link on next mockups
     color: var(--text-main);
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
+} */
 
 /* .section {
     background-color: var(--background-primary);
@@ -169,7 +169,7 @@
 }
 
 /* Socials */
-.link-social {
+/* .link-social {
     display: flex;
     min-width: 40px;
     min-height: 40px;
@@ -182,9 +182,9 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-}
+} */
 
-.icon-socials {
+/* .icon-socials {
     display: block;
     width: 16px;
     height: 16px;
@@ -192,7 +192,7 @@
     fill: var(--background-primary);
 
 
-}
+} */
 
 /* For hodden elements */
 .visually-hidden {
@@ -379,9 +379,9 @@
     width: 264px;
 }
 
-.strengths .item-title {
+/* .strengths .item-title {
     margin-bottom: 8px;
-}
+} */
 
 .strengths-list {
     display: flex;
@@ -411,6 +411,11 @@
 
     fill: var(--dark);
 }
+
+
+
+
+
 
 /* Services Section */
 
@@ -484,16 +489,16 @@
 
 
 
-.team .link-social {
+/* .team .link-social {
     background-color: var(--primary-brand);
 
-}
+} */
 
-.team .link-social:hover,
+/* .team .link-social:hover,
 .team .link-social:focus {
     background-color: var(--action-active);
 
-}
+} */
 
 
 
@@ -659,19 +664,19 @@
     background-color: var(--dark);
 }
 
-.footer .logo {
+/* .footer .logo {
     display: block;
     margin-bottom: 16px;
 
     color: var(--light);
 
     line-height: 1.67;
-}
+} */
 
-.footer .logo:hover,
+/* .footer .logo:hover,
 .footer .logo:focus {
     color: var(--primary-brand);
-}
+} */
 
 .footer-text {
     margin-bottom: 0;
@@ -696,27 +701,27 @@
     letter-spacing: 0.02em;
 }
 
-.footer-socials .socials-list {
+/* .footer-socials .socials-list {
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.footer-socials .icon-socials {
+/* .footer-socials .icon-socials {
     width: 24px;
     height: 24px;
-}
+} */
 
-.footer .link-social {
-    /* padding: 8px; */
+/* .footer .link-social {
+    
 
     background-color: var(--background-footer-social);
-}
+} */
 
-.footer .link-social:hover,
+/* .footer .link-social:hover,
 .footer .link-social:focus {
     background-color: var(--success-highlight);
 
-}
+} */
 
 .footer .container {
     display: flex;
@@ -783,13 +788,13 @@
 
 }
 
-.subscribe-icon {
+/* .subscribe-icon {
     width: 24px;
     height: 24px;
     margin-left: 16px;
 
     fill: currentColor;
-}
+} */
 
 .subscibe-form .button.primary {
     display: flex;
