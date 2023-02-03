@@ -21,7 +21,7 @@
     <header class="header page__header">
       <div class="container">
         <!-- Logo -->
-        <a href="./index.html" aria-label="Webstudio home page" class="logo">
+        <a href="./index.html" aria-label="Webstudio home page" class="logo link">
           <span class="logo__accent">Web</span>Studio
         </a>
 
@@ -81,7 +81,7 @@
           <ul class="section__content list">
             <li class="card">
               <div class="card__illustration card__illustration--feature">
-                <svg class="card__icon">
+                <svg class="card__image card__image--feature">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
@@ -97,7 +97,7 @@
 
             <li class="card">
               <div class="card__illustration card__illustration--feature">
-                <svg class="card__icon">
+                <svg class="card__image card__image--feature">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
@@ -111,7 +111,7 @@
             </li>
             <li class="card">
               <div class="card__illustration card__illustration--feature">
-                <svg class="card__icon">
+                <svg class="card__image card__image--feature">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
@@ -125,7 +125,7 @@
             </li>
             <li class="card">
               <div class="card__illustration card__illustration--feature">
-                <svg class="card__icon">
+                <svg class="card__image card__image--feature">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
@@ -146,36 +146,36 @@
         <div class="container">
           <h2 class="section__title">What are we doing</h2>
           <ul class="section__content list">
-            <li class="item">
-              <a href="./portfolio.html" class="item-link">
+            <li class="card">
+              <a href="./portfolio.html" class="card__illustration card__link">
                 <img
+                  class="card__image"
                   src="./images/img1-services-360x300-opt.jpg"
                   alt="descktop web application"
                   width="360"
                   height="300"
-                  class="block-img"
                 />
               </a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="item-link">
+            <li class="card">
+              <a href="./portfolio.html" class="card__illustration card__link">
                 <img
+                  class="card__image"
                   src="./images/img2-services-360x300-opt.jpg"
                   alt="mobile application"
                   width="360"
                   height="300"
-                  class="block-img"
                 />
               </a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="item-link">
+            <li class="card">
+              <a href="./portfolio.html" class="card__illustration card__link">
                 <img
+                  class="card__image"
                   src="./images/img3-services-360x300-opt.jpg"
                   alt="web application for different type of devices"
                   width="360"
                   height="300"
-                  class="block-img"
                 />
               </a>
             </li>
@@ -188,18 +188,21 @@
         <div class="container">
           <h2 class="section__title">Our Team</h2>
           <ul class="section__content list">
-            <li class="item">
-              <img
-                src="./images/img1-team-264x260-opt.jpg"
-                alt="Mark Guerrero product designer"
-                width="264"
-                height="260"
-                class="block-img"
-              />
-              <div class="caption-wrapper">
-                <h3 class="item-title">Mark Guerrero</h3>
-                <p class="item-text">Product Designer</p>
-                <ul class="list social-links">
+            <li class="card card--person">
+              <div class="card__illustration card__illustration--person">
+                <img
+                  class="card__image"
+                  src="./images/img1-team-264x260-opt.jpg"
+                  alt="Mark Guerrero product designer"
+                  width="264"
+                  height="260"
+                />
+              </div>
+              <div class="card__description card__description--person">
+                <h3 class="card__title card__title--person">Mark Guerrero</h3>
+                <p class="card__text card__text--person">Product Designer</p>
+
+                <ul class="social-links list">
                   <li class="social-item">
                     <a
                       href="https://instagram.com"
@@ -247,18 +250,20 @@
                 </ul>
               </div>
             </li>
-            <li class="item">
-              <img
-                src="./images/img2-team-264x260-opt.jpg"
-                alt="Tom Ford frontend developer"
-                width="264"
-                height="260"
-                class="block-img"
-              />
-              <div class="caption-wrapper">
-                <h3 class="item-title">Tom Ford</h3>
-                <p class="item-text">Frontend Developer</p>
-                <ul class="list social-links">
+            <li class="card card--person">
+              <div class="card__illustration card__illustration--person">
+                <img
+                  class="card__image"
+                  src="./images/img2-team-264x260-opt.jpg"
+                  alt="Tom Ford frontend developer"
+                  width="264"
+                  height="260"
+                />
+              </div>
+              <div class="card__description card__description--person">
+                <h3 class="card__title card__title--person">Tom Ford</h3>
+                <p class="card__text card__text--person">Frontend Developer</p>
+                <ul class="social-links list">
                   <li class="social-item">
                     <a
                       href="https://instagram.com"
@@ -306,18 +311,20 @@
                 </ul>
               </div>
             </li>
-            <li class="item">
-              <img
-                src="./images/img3-team-264x260-opt.jpg"
-                alt="Camila Garcia marketing"
-                width="264"
-                height="260"
-                class="block-img"
-              />
-              <div class="caption-wrapper">
-                <h3 class="item-title">Camila Garcia</h3>
-                <p class="item-text">Marketing</p>
-                <ul class="list social-links">
+            <li class="card card--person">
+              <div class="card__illustration card__illustration--person">
+                <img
+                  class="card__image"
+                  src="./images/img3-team-264x260-opt.jpg"
+                  alt="Camila Garcia marketing"
+                  width="264"
+                  height="260"
+                />
+              </div>
+              <div class="card__description card__description--person">
+                <h3 class="card__title card__title--person">Camila Garcia</h3>
+                <p class="card__text card__text--person">Marketing</p>
+                <ul class="social-links list">
                   <li class="social-item">
                     <a
                       href="https://instagram.com"
@@ -365,18 +372,20 @@
                 </ul>
               </div>
             </li>
-            <li class="item">
-              <img
-                src="./images/img4-team-264x260-opt.jpg"
-                alt="Daniel Wilson ui designer"
-                width="264"
-                height="260"
-                class="block-img"
-              />
-              <div class="caption-wrapper">
-                <h3 class="item-title">Daniel Wilson</h3>
-                <p class="item-text">UI Designer</p>
-                <ul class="list social-links">
+            <li class="card card--person">
+              <div class="card__illustration card__illustration--person">
+                <img
+                  class="card__image"
+                  src="./images/img4-team-264x260-opt.jpg"
+                  alt="Daniel Wilson ui designer"
+                  width="264"
+                  height="260"
+                />
+              </div>
+              <div class="card__description card__description--person">
+                <h3 class="card__title card__title--person">Daniel Wilson</h3>
+                <p class="card__text card__text--person">UI Designer</p>
+                <ul class="social-links list">
                   <li class="social-item">
                     <a
                       href="https://instagram.com"
@@ -431,45 +440,45 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section__title">Customers</h2>
-          <ul class="clients-list list">
-            <li class="item">
-              <a href="" aria-label="client one" class="client-link">
-                <svg class="client-icon">
+          <ul class="section__content list">
+            <li class="card">
+              <a href="" aria-label="client one" class="card__illustration card__illustration--client card__link">
+                <svg class="card__image card__image--client">
                   <use href="./images/icons.svg#company-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="client two" class="client-link">
-                <svg class="client-icon">
+            <li class="card">
+              <a href="" aria-label="client two" class="card__illustration card__illustration--client card__link">
+                <svg class="card__image card__image--client">
                   <use href="./images/icons.svg#company-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="client three" class="client-link">
-                <svg class="client-icon">
+            <li class="card">
+              <a href="" aria-label="client three" class="card__illustration card__illustration--client">
+                <svg class="card__image card__image--client">
                   <use href="./images/icons.svg#company-3"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="client four" class="client-link">
-                <svg class="client-icon">
+            <li class="card">
+              <a href="" aria-label="client four" class="card__illustration card__illustration--client">
+                <svg class="card__image card__image--client">
                   <use href="./images/icons.svg#company-4"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="client five" class="client-link">
-                <svg class="client-icon">
+            <li class="card">
+              <a href="" aria-label="client five" class="card__illustration card__illustration--client">
+                <svg class="card__image card__image--client">
                   <use href="./images/icons.svg#company-5"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" aria-label="client six" class="client-link">
-                <svg class="client-icon">
+            <li class="card">
+              <a href="" aria-label="client six" class="card__illustration card__illustration--client">
+                <svg class="card__image card__image--client">
                   <use href="./images/icons.svg#company-6"></use>
                 </svg>
               </a>
@@ -487,7 +496,7 @@
           <a
             href="./index.html"
             aria-label="Webstudio home page"
-            class="logo logo--theme_dark"
+            class="logo logo--theme_dark link"
           >
             <span class="logo-accent logo__accent">Web</span>Studio
           </a>
@@ -501,7 +510,7 @@
         <!-- Socials block -->
         <div class="footer-socials">
           <p class="socials-title">Social media</p>
-          <ul class="list social-links">
+          <ul class="social-links social-links--theme_dark list">
             <li class="social-item">
               <a
                 href="https://instagram.com"
