@@ -14,6 +14,22 @@
     --modal-bg: #FCFCFC;
 }
 
+/* For hodden elements */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
 /* Page */
 .page {}
 
@@ -59,16 +75,9 @@
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* text-decoration: none; */
-
-    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 
 }
 
-/* .logo:hover,
-.logo:focus {
-    color: var(--action-active);
-} */
 
 .logo--theme_dark {
     color: var(--light);
@@ -185,6 +194,9 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
 
+    justify-content: center;
+    align-items: center;
+
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -204,10 +216,35 @@
     fill: currentColor;
 }
 
+.button--subscribe {
+    min-width: 165px;
+    padding: 8px 0;
+}
+
 /* Section */
 
 .section {
     background-color: var(--background-primary);
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section--half-bottom {
+    padding-bottom: 60px;
+}
+
+.section--half-top {
+    padding-top: 60px;
+}
+
+.section--bg-grey {
+    background-color: var(--light);
+}
+
+.section--no-paddings {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .section__title {
@@ -221,7 +258,7 @@
 
 
     font-size: 36px;
-    font-weight: 700;
+    /* font-weight: 700; */
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
@@ -233,12 +270,17 @@
     column-gap: 24px;
 }
 
+.section__content--gallery {
+    flex-wrap: wrap;
+    row-gap: 48px;
+}
+
 /* Hero */
 
 .hero {}
 
 .hero__title {
-
+    margin-bottom: 48px;
     max-width: 498px;
 
     color: var(--background-primary);
@@ -370,7 +412,14 @@
 }
 
 .card__link {
-    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card__illustration-hover {
+    margin: 0;
+    position: absolute;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card__image--feature {
@@ -384,9 +433,9 @@
     min-height: 112px;
     padding: 4px;
     margin-bottom: 8px;
-
+/* 
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     background-color: var(--light);
     border-radius: 4px;
@@ -415,7 +464,7 @@
 }
 
 .card--client {
-
+    
 }
 
 .card__illustration--client {
@@ -425,12 +474,11 @@
     justify-content: center;
     align-items: center;
 
+    color: var(--subtle-text); 
+
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
-    color: var(--subtle-text);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
 }
 
 .card__image--client {
@@ -440,10 +488,183 @@
     fill: currentColor;
 }
 
-.card__illustration--client:hover,
-.card__illustration--client:focus {
+
+.card__link--client {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card__link--client:hover,
+.card__link--client:focus {
     border-color: var(--action-active);
     color: var(--action-active);
 }
 
+.card--gallery {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card--gallery:hover,
+.card--gallery:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.card__description--gallery {
+    padding: 32px 16px;
+
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card--gallery:hover .card__description--gallery ,
+.card--gallery:focus .card__description--gallery {
+    border-left: 0.5px solid var(--light);
+    border-right: 0.5px solid var(--light);
+    border-bottom: 0.5px solid var(--light);
+}
+
+.card__illustration--gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__illustration-hover--gallery {
+
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    top: 100%;
+    left: 0;
+    height: 100%;
+
+    color: var(--light);
+    background-color: var(--primary-brand);
+    color: var(--light);
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    transform: translateY(0);
+}
+
+.card--gallery:hover .card__illustration-hover--gallery ,
+.card--gallery:focus .card__illustration-hover--gallery {
+    transform: translateY(-100%);
+}
+
+
+
+
+
+/* Footer */
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.footer__text {
+    margin-bottom: 0;
+    max-width: 264px;
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+}
+
+.footer__logo {
+    margin-right: 120px;
+}
+
+.footer__socials {
+    min-width: 208px;
+    margin-right: 80px;
+}
+
+.footer__subtitle {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+.footer__blocks {
+    display: flex;
+}
+
+/* Subscribe-form */
+
+.subscribe-form{
+    display: flex;
+    column-gap: 24px;
+
+    align-items: center;
+
+}
+
+.subscribe-form__input {
+    width: 264px;
+    height: 40px;
+    /* margin-right: 24px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+
+    color: var(--light);
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe-form__input:focus {
+    outline: none;
+    border: 1px solid var(--light);
+
+}
+
+.subscribe-form__field {
+    position: relative;
+}
+
+.subscribe-form__label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-form__field:focus-within .subscribe-form__label,
+.subscribe-form__input:not(:placeholder-shown)+.subscribe-form__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

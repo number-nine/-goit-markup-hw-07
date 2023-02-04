@@ -195,7 +195,7 @@
 } */
 
 /* For hodden elements */
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -207,7 +207,7 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 /* Header Section */
 
@@ -370,10 +370,10 @@
 } */
 
 /* Strengths Section */
-.strengths {
+/* .strengths {
     padding-top: 120px;
     padding-bottom: 60px;
-}
+} */
 
 /* .strengths .item {
     width: 264px;
@@ -419,10 +419,10 @@
 
 /* Services Section */
 
-.services {
+/* .services {
     padding-top: 60px;
     padding-bottom: 120px;
-}
+} */
 
 /* .services .section-title {
     margin-bottom: 72px;
@@ -440,12 +440,12 @@
 
 /* Team Section */
 
-.team {
+/* .team {
     padding-top: 120px;
     padding-bottom: 120px;
 
     background-color: var(--light);
-}
+} */
 
 /* .team .section-title {
     margin-bottom: 72px;
@@ -517,25 +517,25 @@
     margin-bottom: 72px;
 }
 
-.works-list .item-title {
+/* .works-list .item-title {
     margin-bottom: 8px;
 
-}
+} */
 
-.works-list .item {
+/* .works-list .item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
-.works-list .item:hover,
+/* .works-list .item:hover,
 .works-list .item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
-}
+} */
 
-.works-list .caption-wrapper {
+/* .works-list .caption-wrapper {
     padding: 32px 16px;
 
     border-left: 1px solid var(--accent-color);
@@ -544,21 +544,21 @@
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
-.works-list .item:hover .caption-wrapper,
+/* .works-list .item:hover .caption-wrapper,
 .works-list .item:focus .caption-wrapper {
     border-left: 0.5px solid var(--light);
     border-right: 0.5px solid var(--light);
     border-bottom: 0.5px solid var(--light);
-}
+} */
 
-.work-thumb {
+/* .work-thumb {
     position: relative;
     overflow: hidden;
-}
+} */
 
-.hover-text {
+/* .hover-text {
     margin: 0;
     padding-top: 40px;
     padding-left: 32px;
@@ -566,7 +566,6 @@
     position: absolute;
     top: 100%;
     left: 0;
-    /* width: 100%; */
     height: 100%;
     background-color: var(--primary-brand);
     color: var(--light);
@@ -575,12 +574,12 @@
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
-.works-list .item:hover .hover-text,
+/* .works-list .item:hover .hover-text,
 .works-list .item:focus .hover-text {
     transform: translateY(-100%);
-}
+} */
 
 
 /* Portfolio Filter */
@@ -591,35 +590,35 @@
 
 /* Portfolio Works Catalogue */
 
-.works-list {
+/* .works-list {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
-.works-list .item:not(:nth-child(3n)) {
+/* .works-list .item:not(:nth-child(3n)) {
     margin-right: 24px;
-}
+} */
 
-.works-list .item:not(:nth-last-child(-n+3)) {
+/* .works-list .item:not(:nth-last-child(-n+3)) {
     margin-bottom: 48px;
-}
+} */
 
 /* Clients section */
 
-.clients {
+/* .clients {
     padding-top: 130px;
     padding-bottom: 120px;
 
-}
+} */
 
 /* .clients .section-title {
     margin-bottom: 72px;
 } */
 
-.clients-list {
+/* .clients-list {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 /* .client-link {
     display: flex;
@@ -638,12 +637,12 @@
 
 } */
 
-.client-link:hover,
+/* .client-link:hover,
 .client-link:focus {
 
     border: 1px solid var(--action-active);
     color: var(--action-active);
-}
+} */
 
 /* .client-icon {
     width: 104px;
@@ -656,13 +655,13 @@
 
 /* Footer Section */
 
-.footer {
+/* .footer {
     padding-top: 100px;
     padding-bottom: 100px;
 
     color: var(--light);
     background-color: var(--dark);
-}
+} */
 
 /* .footer .logo {
     display: block;
@@ -678,20 +677,20 @@
     color: var(--primary-brand);
 } */
 
-.footer-text {
+/* .footer-text {
     margin-bottom: 0;
     max-width: 264px;
 
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
+} */
 
-.footer-socials {
+/* .footer-socials {
     min-width: 208px;
     margin-right: 80px;
-}
+} */
 
-.footer-socials .socials-title,
+/* .footer-socials .socials-title,
 .subscribe-title {
     margin-top: 0;
     margin-bottom: 16px;
@@ -699,7 +698,7 @@
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
+} */
 
 /* .footer-socials .socials-list {
     display: flex;
@@ -723,21 +722,21 @@
 
 } */
 
-.footer .container {
+/* .footer .container {
     display: flex;
-}
+} */
 
-.footer-logo {
+/* .footer-logo {
     margin-right: 120px;
-}
+} */
 
 /* Subscribe block  */
-.subscribe-title {
+/* .subscribe-title {
     display: block;
-}
+} */
 
 
-.subscribe-field {
+/* .subscribe-field {
     width: 264px;
     height: 40px;
     margin-right: 24px;
@@ -750,31 +749,31 @@
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-}
+} */
 
-.footer-subscribe .button {
+/* .footer-subscribe .button {
     min-width: 165px;
     padding: 8px 0;
 
     justify-content: center;
     align-items: center;
 
-}
+} */
 
-.subscibe-form {
+/* .subscibe-form {
     display: flex;
 
     align-items: center;
-}
-
+} */
+/* 
 .subscribe-input {
     position: relative;
-}
+} */
 
-.subscribe-label {
+/* .subscribe-label {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -786,7 +785,7 @@
     line-height: 2;
     letter-spacing: 0.04em;
 
-}
+} */
 
 /* .subscribe-icon {
     width: 24px;
@@ -796,16 +795,15 @@
     fill: currentColor;
 } */
 
-.subscibe-form .button.primary {
+/* .subscibe-form .button.primary {
     display: flex;
-}
+} */
 
-.subscribe-field:focus {
-    outline: none;
-    border: 1px solid var(--light);
-}
+/* .subscribe-field:focus {
+    
+} */
 
-.subscribe-input:focus-within .subscribe-label,
+/* .subscribe-input:focus-within .subscribe-label,
 .subscribe-field:not(:placeholder-shown)+.subscribe-label {
     position: absolute;
     width: 1px;
@@ -818,7 +816,7 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 /* Modal window */
 
