@@ -10,7 +10,7 @@
     refs.closeModalBtn.addEventListener("click", toggleModal);
   
     function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-      refs.bodyNoScroll.classList.toggle("is-scrollable");
+      refs.modal.classList.toggle("backdrop--hidden");
+      refs.bodyNoScroll.classList.toggle("page__body--no-scroll");
     }
   })();

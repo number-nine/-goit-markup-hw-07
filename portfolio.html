@@ -18,8 +18,8 @@
   </head>
   <body class="page__body" body-noscroll>
     <!-- Header section -->
-    <header class="header page__header">
-      <div class="container">
+    <header class="header">
+      <div class="page__container page__container--header">
         <!-- Logo -->
         <a
           href="./index.html"
@@ -29,7 +29,7 @@
           <span class="logo__accent">Web</span>Studio
         </a>
 
-        <nav class="menu">
+        <nav class="menu header__menu">
           <!-- Main navigation -->
           <ul class="list menu__list">
             <li class="menu__item">
@@ -49,7 +49,7 @@
           </ul>
         </nav>
         <!-- Contacts block. The only address block at present so wrapped with address tag -->
-        <address class="contacts">
+        <address class="contacts header__contacts">
           <ul class="list contacts__list">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="link contacts__link">
@@ -67,39 +67,46 @@
     </header>
 
     <main>
-      <section class="section portfolio">
-        <div class="container">
+      <section class="section section--with-filters">
+        <div class="page__container">
           <h1 class="section__title visually-hidden">Portfolio</h1>
-          <ul class="filter-list list">
-            <li class="item">
-              <button type="button" class="button filter">All</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button filter">Web Site</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button filter">App</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button filter">Design</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button filter">Marketing</button>
-            </li>
-          </ul>
 
+          <form class="filter-form" name="gallery-filter" action="">
+            <ul class="list section__content filter-form__options">
+              <li>
+                <button type="button" class="button button--filter">All</button>
+              </li>
+              <li>
+                <button type="button" class="button button--filter">Web Site</button>
+              </li>
+              <li>
+                <button type="button" class="button button--filter">App</button>
+              </li>
+              <li>
+                <button type="button" class="button button--filter">Design</button>
+              </li>
+              <li>
+                <button type="button" class="button button--filter">Marketing</button>
+              </li>
+            </ul>
+          </form>
 
           <ul class="section__content section__content--gallery list">
-
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                  class="card__image"
-                  src="./images/portfolio01-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app" 
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio01-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Banking App Interface Concept</h2>
@@ -108,16 +115,21 @@
               </a>
             </li>
 
-
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio02-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio02-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Cashless Payment</h2>
@@ -129,13 +141,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio03-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio03-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Meditaion App</h2>
@@ -147,13 +164,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio04-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio04-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Taxi Service</h2>
@@ -164,13 +186,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio05-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio05-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Screen Illustrations</h2>
@@ -181,13 +208,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio06-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio06-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Online Courses</h2>
@@ -198,13 +230,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio07-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio07-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Instagram Stories Concept</h2>
@@ -215,13 +252,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio08-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio08-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Organic Food</h2>
@@ -232,13 +274,18 @@
             <li class="card card--gallery">
               <a href="" class="card__link">
                 <div class="card__illustration card__illustration--gallery">
-                <img
-                class="card__image"
-                  src="./images/portfolio09-360x300-opt.jpg"
-                  alt="violet interfaces of a bank app"
-                  
-                >
-                <p class="card__illustration-hover card__illustration-hover--gallery"> 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <img
+                    class="card__image"
+                    src="./images/portfolio09-360x300-opt.jpg"
+                    alt="violet interfaces of a bank app"
+                  />
+                  <p
+                    class="card__illustration-hover card__illustration-hover--gallery"
+                  >
+                    14 Stylish and User-Friendly App Design Concepts · Task
+                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce
+                    App · Cloud Storage App
+                  </p>
                 </div>
                 <div class="card__description card__description--gallery">
                   <h2 class="card__title">Fresh Coffee</h2>
@@ -252,7 +299,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="page__container">
         <ul class="list footer__blocks">
           <li class="footer__logo">
             <!-- Logo block-->
@@ -323,33 +370,31 @@
           </li>
           <li class="footer__subscribe">
             <!-- Subscribe block-->
-            
-              <b class="footer__subtitle">Subscribe</b>
 
-              <form action="" class="subscribe-form" name="subscribe-form">
-                <label class="subscribe-form__field">
-                  <input
-                    class="subscribe-form__input"
-                    name="subscribe-field"
-                    type="email"
-                    placeholder=" "
-                    autocomplete="off"
-                  />
-                  <span class="subscribe-form__label">E-mail</span>
-                </label>
-                <button
-                  class="button button--subscribe"
-                  name="subscribe-submit"
-                  type="submit"
-                >
-                  Subscribe
-                  <svg class="button__icon">
-                    <use href="images/icons.svg#plane"></use>
-                  </svg>
-                </button>
-              </form>
+            <b class="footer__subtitle">Subscribe</b>
 
-            
+            <form action="" class="subscribe-form" name="subscribe-form">
+              <label class="subscribe-form__field">
+                <input
+                  class="subscribe-form__input"
+                  name="subscribe-field"
+                  type="email"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <span class="subscribe-form__label">E-mail</span>
+              </label>
+              <button
+                class="button button--subscribe"
+                name="subscribe-submit"
+                type="submit"
+              >
+                Subscribe
+                <svg class="button__icon">
+                  <use href="images/icons.svg#plane"></use>
+                </svg>
+              </button>
+            </form>
           </li>
         </ul>
       </div>

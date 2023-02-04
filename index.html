@@ -18,8 +18,8 @@
   </head>
   <body class="page__body" body-noscroll>
     <!-- Header section -->
-    <header class="header page__header">
-      <div class="container">
+    <header class="header">
+      <div class="page__container page__container--header">
         <!-- Logo -->
         <a
           href="./index.html"
@@ -29,7 +29,7 @@
           <span class="logo__accent">Web</span>Studio
         </a>
 
-        <nav class="menu">
+        <nav class="menu header__menu">
           <!-- Main navigation -->
           <ul class="list menu__list">
             <li class="menu__item">
@@ -49,7 +49,7 @@
           </ul>
         </nav>
         <!-- Contacts block. The only address block at present so wrapped with address tag -->
-        <address class="contacts">
+        <address class="contacts header__contacts">
           <ul class="list contacts__list">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="link contacts__link">
@@ -80,7 +80,7 @@
       </section>
       <!-- Strengths section -->
       <section class="section section--half-bottom">
-        <div class="container">
+        <div class="page__container">
           <h2 class="section__title visually-hidden">Strengths</h2>
           <ul class="section__content list">
             <li class="card">
@@ -147,7 +147,7 @@
 
       <!-- Services section -->
       <section class="section section--half-top">
-        <div class="container">
+        <div class="page__container">
           <h2 class="section__title">What are we doing</h2>
           <ul class="section__content list">
             <li class="card">
@@ -189,7 +189,7 @@
 
       <!-- Team section -->
       <section class="section section--bg-grey">
-        <div class="container">
+        <div class="page__container">
           <h2 class="section__title">Our Team</h2>
           <ul class="section__content list">
             <li class="card card--person">
@@ -442,7 +442,7 @@
       </section>
       <!-- Clients section -->
       <section class="section">
-        <div class="container">
+        <div class="page__container">
           <h2 class="section__title">Customers</h2>
           <ul class="section__content list">
             <li class="card">
@@ -517,7 +517,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="page__container">
         <ul class="list footer__blocks">
           <li class="footer__logo">
             <!-- Logo block-->
@@ -529,7 +529,6 @@
               <span class="logo__accent">Web</span>Studio
             </a>
 
-            <!-- This part also can be call to action (<b>) but not important at the moment -->
             <p class="footer__text">
               Increase the flow of customers and sales for your business with
               digital marketing & growth solutions.
@@ -620,37 +619,42 @@
       </div>
     </footer>
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+    <div class="backdrop backdrop--hidden" data-modal>
+      <div class="modal backdrop__modal">
         <button
           type="button"
           aria-label="close modal"
-          class="modal-close"
+          class="button-close modal__button-close"
           data-modal-close
         >
-          <svg class="close-icon">
+          <svg class="button-close__icon">
             <use href="images/icons.svg#close-modal"></use>
           </svg>
         </button>
-        <b class="contact-title"
+        <b class="modal__title"
           >Leave your contacts and we will call you back</b
         >
-        <form action="" class="contact-form" name="contact-form">
-          <ul class="list form-list">
+
+
+        <form action="" class="contacts-form" name="contact-form">
+
+          <ul class="list contacts-form__fieldset">
+
             <li class="form-item">
-              <label class="field">
+              <label class="contacts-form__field">
                 <input
-                  class="name-field"
+                  class="contacts-form__input"
                   name="name-field"
                   type="text"
                   placeholder=" "
                 />
-                <span class="label">Name</span>
-                <svg class="contact-icon">
+                <span class="contacts-form__label">Name</span>
+                <svg class="contacts-form__icon">
                   <use href="images/icons.svg#person-cont"></use>
                 </svg>
               </label>
             </li>
+
             <li class="form-item">
               <label class="field">
                 <input
@@ -665,6 +669,7 @@
                 </svg>
               </label>
             </li>
+
             <li class="form-item">
               <label class="field">
                 <input
@@ -679,6 +684,7 @@
                 </svg>
               </label>
             </li>
+
             <li class="form-item">
               <label class="area">
                 <textarea
@@ -690,6 +696,7 @@
                 <span class="label">Comment</span>
               </label>
             </li>
+
             <li class="form-item">
               <label class="policy">
                 <input
@@ -709,6 +716,7 @@
                 </svg>
               </label>
             </li>
+
             <li class="form-item">
               <button
                 class="button primary"
@@ -718,10 +726,12 @@
                 Send
               </button>
             </li>
+
           </ul>
+
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/backdrop.js"></script>
   </body>
 </html>
