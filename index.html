@@ -73,7 +73,7 @@
           <h1 class="section__title hero__title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button hero__button" data-modal-open>
+          <button type="button" class="button button--submit hero__button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -640,7 +640,7 @@
 
           <ul class="list contacts-form__fieldset">
 
-            <li class="form-item">
+            <li class="modal__form-item">
               <label class="contacts-form__field">
                 <input
                   class="contacts-form__input"
@@ -655,71 +655,75 @@
               </label>
             </li>
 
-            <li class="form-item">
-              <label class="field">
+            <li class="modal__form-item">
+              <label class="contacts-form__field">
                 <input
-                  class="phone-field"
+                  class="contacts-form__input"
                   name="phone-field"
                   type="tel"
                   placeholder=" "
                 />
-                <span class="label">Phone</span>
-                <svg class="contact-icon">
+                <span class="contacts-form__label">Phone</span>
+                <svg class="contacts-form__icon">
                   <use href="images/icons.svg#phone-cont"></use>
                 </svg>
               </label>
             </li>
 
-            <li class="form-item">
-              <label class="field">
+            <li class="modal__form-item">
+              <label class="contacts-form__field">
                 <input
-                  class="email-field"
+                  class="contacts-form__input"
                   name="email-field"
                   type="email"
                   placeholder=" "
                 />
-                <span class="label">Email</span>
-                <svg class="contact-icon">
+                <span class="contacts-form__label">Email</span>
+                <svg class="contacts-form__icon">
                   <use href="images/icons.svg#email-cont"></use>
                 </svg>
               </label>
             </li>
 
-            <li class="form-item">
-              <label class="area">
+            <li class="modal__form-item modal__form-item--gap_s">
+              <label class="contacts-form__field">
                 <textarea
-                  class="comment-field"
+                  class="contacts-form__input contacts-form__input--area"
                   name="comment-field"
                   placeholder="Text input"
                   autocomplete="off"
                 ></textarea>
-                <span class="label">Comment</span>
+                <span class="contacts-form__label">Comment</span>
               </label>
             </li>
 
-            <li class="form-item">
-              <label class="policy">
+
+
+            <li class="modal__form-item">
+              <label class="checkbox">
                 <input
-                  class="policy-field"
+                  class="checkbox__input"
                   name="policy-field"
                   type="checkbox"
                 />
-                <span class="policy-label">
-                  <span class="policy-box"> </span>
+                <span class="chekbox__label">
+                  <span class="chekbox__custom-box"> </span>
                   <span>
                     I accept the terms and conditions of the
-                    <a href="" class="link-policy">Privacy Policy</a>
+                    <a href="" class="link link--inline">Privacy Policy</a>
                   </span>
                 </span>
-                <svg class="policy-icon">
+                <svg class="checkbox__icon">
                   <use href="images/icons.svg#click"></use>
                 </svg>
               </label>
             </li>
 
-            <li class="form-item">
+
+
+            <li class="modal__form-item modal__form-item--gap_zero">
               <button
-                class="button primary"
+                class="button button--submit contacts-form__button"
                 name="contact-submit"
                 type="submit"
               >
