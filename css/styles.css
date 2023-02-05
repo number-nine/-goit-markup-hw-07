@@ -12,6 +12,7 @@
     --subtle-text: #8E8F99;
     --backdrop-bg: rgba(46, 47, 66, 0.4);
     --modal-bg: #FCFCFC;
+    --cards-gap:24px;
 }
 
 /* For hodden elements */
@@ -64,8 +65,6 @@
 /* Header */
 
 .header {
-    display: flex;
-    column-gap: 76px;
 
     border-bottom: 1px solid var(--accent-color);
     background-color: var(--background-primary);
@@ -335,12 +334,34 @@
 
 .section__content {
     display: flex;
-    column-gap: 24px;
+    flex-wrap: wrap;
+    column-gap: var(--cards-gap);
+    row-gap: calc(2 * var(--cards-gap));
 }
 
-.section__content--gallery {
-    flex-wrap: wrap;
-    row-gap: 48px;
+.section__content--feature > *{
+    --elements-in-row: 4;
+    flex-basis: calc((100% - (var(--elements-in-row) - 1) * var(--cards-gap))/var(--elements-in-row));
+}
+
+.section__content--services > *{
+    --elements-in-row: 3;
+    flex-basis: calc((100% - (var(--elements-in-row) - 1) * var(--cards-gap))/var(--elements-in-row));
+}
+
+.section__content--team > *{
+    --elements-in-row: 4;
+    flex-basis: calc((100% - (var(--elements-in-row) - 1) * var(--cards-gap))/var(--elements-in-row));
+}
+
+.section__content--clients > *{
+    --elements-in-row: 6;
+    flex-basis: calc((100% - (var(--elements-in-row) - 1) * var(--cards-gap))/var(--elements-in-row));
+}
+
+.section__content--gallery > *{
+    --elements-in-row: 3;
+    flex-basis: calc((100% - (var(--elements-in-row) - 1) * var(--cards-gap))/var(--elements-in-row));
 }
 
 /* Hero */
@@ -378,7 +399,7 @@
 /* Social Links */
 .social-links {
     display: flex;
-    column-gap: 24px;
+    column-gap: var(--cards-gap);
     justify-content: center;
 }
 
@@ -433,6 +454,17 @@
     height: 24px;
 }
 
+/* Cards Grid */
+
+/* .cards-grid__wrap {
+    flex-wrap: wrap;
+}
+
+.cards-grid {
+    --elements-in-row: 4;
+    flex-basis: calc((100% - (var(--elements-in-row) - 1) * var(--cards-gap))/var(--elements-in-row));
+} */
+
 /* Card */
 
 .card {
@@ -451,6 +483,7 @@
     display: block;
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 .card__description {}
@@ -497,9 +530,6 @@
     min-height: 112px;
     padding: 4px;
     margin-bottom: 8px;
-/* 
-    justify-content: center;
-    align-items: center; */
 
     background-color: var(--light);
     border-radius: 4px;
@@ -673,7 +703,7 @@
 
 .subscribe-form{
     display: flex;
-    column-gap: 24px;
+    column-gap: var(--cards-gap);
 
     align-items: center;
 
