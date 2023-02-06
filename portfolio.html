@@ -2,6 +2,7 @@
 <html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -13,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Main page</title>
+    <title>Portfolio page</title>
   </head>
   <body class="page__body" body-noscroll>
     <!-- Header section -->
@@ -71,7 +72,7 @@
           <h1 class="section__title visually-hidden">Portfolio</h1>
 
           <form class="filter-form" name="gallery-filter" action="">
-            <ul class="list section__content filter-form__options">
+            <ul class="list section__content section__content--filter">
               <li>
                 <button type="button" class="button button--filter">All</button>
               </li>
@@ -108,7 +109,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Banking App Interface Concept</h2>
+                  <h2 class="card__title card__title--gallery">Banking App Interface Concept</h2>
                   <p class="card__text">App</p>
                 </div>
               </a>
@@ -131,7 +132,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Cashless Payment</h2>
+                  <h2 class="card__title card__title--gallery">Cashless Payment</h2>
                   <p class="card__text">Marketing</p>
                 </div>
               </a>
@@ -154,7 +155,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Meditaion App</h2>
+                  <h2 class="card__title card__title--gallery">Meditaion App</h2>
                   <p class="card__text">App</p>
                 </div>
               </a>
@@ -177,7 +178,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Taxi Service</h2>
+                  <h2 class="card__title card__title--gallery">Taxi Service</h2>
                   <p class="card__text">Marketing</p>
                 </div>
               </a>
@@ -199,7 +200,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Screen Illustrations</h2>
+                  <h2 class="card__title card__title--gallery">Screen Illustrations</h2>
                   <p class="card__text">Design</p>
                 </div>
               </a>
@@ -221,7 +222,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Online Courses</h2>
+                  <h2 class="card__title card__title--gallery">Online Courses</h2>
                   <p class="card__text">Marketing</p>
                 </div>
               </a>
@@ -243,7 +244,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Instagram Stories Concept</h2>
+                  <h2 class="card__title card__title--gallery">Instagram Stories Concept</h2>
                   <p class="card__text">Design</p>
                 </div>
               </a>
@@ -265,7 +266,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Organic Food</h2>
+                  <h2 class="card__title card__title--gallery">Organic Food</h2>
                   <p class="card__text">Web Site</p>
                 </div>
               </a>
@@ -287,7 +288,7 @@
                   </p>
                 </div>
                 <div class="card__description card__description--gallery">
-                  <h2 class="card__title">Fresh Coffee</h2>
+                  <h2 class="card__title card__title--gallery">Fresh Coffee</h2>
                   <p class="card__text">Web Site</p>
                 </div>
               </a>
@@ -300,12 +301,12 @@
     <footer class="footer">
       <div class="page__container">
         <ul class="list footer__blocks">
-          <li class="footer__logo">
+          <li class="footer__block footer__block--logo">
             <!-- Logo block-->
             <a
               href="./index.html"
               aria-label="Webstudio home page"
-              class="logo logo--theme_dark link"
+              class="link logo logo--theme_dark footer__subtitle footer__subtitle--text"
             >
               <span class="logo__accent">Web</span>Studio
             </a>
@@ -315,10 +316,10 @@
               digital marketing & growth solutions.
             </p>
           </li>
-          <li class="footer__socials">
+          <li class="footer__block footer__block--socials">
             <!-- Socials block -->
 
-            <p class="footer__subtitle">Social media</p>
+            <p class="footer__subtitle footer__subtitle--text">Social media</p>
             <ul class="social-links social-links--theme_dark list">
               <li>
                 <a
@@ -366,33 +367,35 @@
               </li>
             </ul>
           </li>
-          <li class="footer__subscribe">
+          <li class="footer__block">
             <!-- Subscribe block-->
+            
+              <b class="footer__subtitle footer__subtitle--text">Subscribe</b>
 
-            <b class="footer__subtitle">Subscribe</b>
+              <form action="" class="subscribe-form" name="subscribe-form">
+                <label class="subscribe-form__field">
+                  <input
+                    class="subscribe-form__input"
+                    name="subscribe-field"
+                    type="email"
+                    placeholder=" "
+                    autocomplete="off"
+                  />
+                  <span class="subscribe-form__label">E-mail</span>
+                </label>
+                <button
+                  class="button button--subscribe"
+                  name="subscribe-submit"
+                  type="submit"
+                >
+                  Subscribe
+                  <svg class="button__icon">
+                    <use href="images/icons.svg#plane"></use>
+                  </svg>
+                </button>
+              </form>
 
-            <form action="" class="subscribe-form" name="subscribe-form">
-              <label class="subscribe-form__field">
-                <input
-                  class="subscribe-form__input"
-                  name="subscribe-field"
-                  type="email"
-                  placeholder=" "
-                  autocomplete="off"
-                />
-                <span class="subscribe-form__label">E-mail</span>
-              </label>
-              <button
-                class="button button--subscribe"
-                name="subscribe-submit"
-                type="submit"
-              >
-                Subscribe
-                <svg class="button__icon">
-                  <use href="images/icons.svg#plane"></use>
-                </svg>
-              </button>
-            </form>
+            
           </li>
         </ul>
       </div>
