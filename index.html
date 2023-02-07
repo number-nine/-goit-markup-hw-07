@@ -47,6 +47,7 @@
               <a href="" class="link menu__link"> Contacts </a>
             </li>
           </ul>
+          
         </nav>
         <!-- Contacts block. The only address block at present so wrapped with address tag -->
         <address class="contacts header__contacts">
@@ -63,6 +64,13 @@
             </li>
           </ul>
         </address>
+        <button class="menu-button menu-button--pressed" type="button" js-menu-container>
+            <svg aria-label="Mobile menu slider">
+              <use class="menu-button__icon menu-button__icon--open" href="./images/icons.svg#hamburger" js-open-menu></use>
+              <use class="menu-button__icon menu-button__icon--close" href="./images/icons.svg#close-modal" js-close-menu></use>
+            </svg>
+        </button>
+
       </div>
     </header>
 
@@ -737,5 +745,6 @@
       </div>
     </div>
     <script src="./js/backdrop.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
