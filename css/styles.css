@@ -100,10 +100,8 @@
 /* Header */
 
 .header {
-    position: relative;
     border-bottom: 1px solid var(--accent-color);
-    background-color: orange;
-    /* var(--background-primary); */
+    background-color: var(--background-primary);
 
     /* z-index: 101; */
     /* overflow: hidden; */
@@ -150,8 +148,6 @@
     .header__menu-wrapper {
         display: flex;
         flex-direction: column;
-        
-
     }
 
     .menu-button--pressed~.header__menu-wrapper {
@@ -161,8 +157,15 @@
     }
 
     /* Z-Index wars */
-    .header, .footer, .menu {
+    .header,
+    .footer,
+    .main {
         position: relative;
+    }
+
+    .footer,
+    .main {
+        z-index: -2;
     }
 }
 
@@ -270,8 +273,8 @@
 .menu-button {
     /* display: none; */
     display: flex;
-        align-items: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
     /* width: 20px;
     height: 20px; */
     margin: 0;
@@ -282,7 +285,7 @@
 }
 
 .menu-button__illustration {
-  
+
     height: 16px;
     width: 24px;
 }
