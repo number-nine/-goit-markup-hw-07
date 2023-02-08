@@ -24,47 +24,119 @@
         <a
           href="./index.html"
           aria-label="Webstudio home page"
-          class="logo link"
+          class="logo link header__logo"
         >
           <span class="logo__accent">Web</span>Studio
         </a>
 
-        <nav class="menu header__menu">
-          <!-- Main navigation -->
-          <ul class="list menu__list">
-            <li class="menu__item">
+        <button
+          class="menu-button js-btn-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-button__illustration" aria-label="Mobile menu slider">
+            <use
+              class="menu-button__icon menu-button__icon--open"
+              href="./images/icons.svg#hamburger"
+              js-open-menu
+            ></use>
+            <use
+              class="menu-button__icon menu-button__icon--close"
+              href="./images/icons.svg#close-modal"
+              js-close-menu
+            ></use>
+          </svg>
+        </button>
+
+        <div class="header__menu-wrapper js-menu-container" id="mobile-menu">
+          <nav class="menu header__menu">
+            <!-- Main navigation -->
+            <ul class="list menu__list">
+              <li class="menu__item">
+                <a
+                  href="./index.html"
+                  class="link menu__link"
+                >
+                  Studio
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="link menu__link menu__link--current">
+                  Portfolio
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link"> Contacts </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Contacts block. The only address block at present so wrapped with address tag -->
+          <address class="contacts header__contacts">
+            <ul class="list contacts__list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="link contacts__link">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+110001111111" class="link contacts__link">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="list social-links social-links--mobile">
+            <li>
               <a
-                href="./index.html"
-                class="link menu__link"
+                href="https://instagram.com"
+                aria-label="instagram"
+                class="social-links__link"
               >
-                Studio
+                <svg class="social-links__icon">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
               </a>
             </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="link menu__link menu__link--current"> Portfolio </a>
+            <li>
+              <a
+                href="https://twitter.com"
+                aria-label="twitter"
+                class="social-links__link"
+              >
+                <svg class="social-links__icon">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link"> Contacts </a>
+            <li>
+              <a
+                href="https://facebook.com"
+                aria-label="facebook"
+                class="social-links__link"
+              >
+                <svg class="social-links__icon">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com"
+                aria-label="linkedin"
+                class="social-links__link"
+              >
+                <svg class="social-links__icon">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <!-- Contacts block. The only address block at present so wrapped with address tag -->
-        <address class="contacts header__contacts">
-          <ul class="list contacts__list">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="link contacts__link">
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+110001111111" class="link contacts__link">
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
+        </div>
+
       </div>
     </header>
+
 
     <main>
       <section class="section section--with-filters">
@@ -400,5 +472,12 @@
         </ul>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
