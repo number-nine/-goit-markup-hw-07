@@ -2,7 +2,7 @@
 <html class="page" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -28,49 +28,65 @@
         >
           <span class="logo__accent">Web</span>Studio
         </a>
-        <div class="header__menu-wrapper">
-        <nav class="menu header__menu">
-          <!-- Main navigation -->
-          <ul class="list menu__list">
-            <li class="menu__item">
-              <a
-                href="./index.html"
-                class="link menu__link menu__link--current"
-              >
-                Studio
-              </a>
-            </li>
-            <li class="menu__item">
-              <a href="./portfolio.html" class="link menu__link"> Portfolio </a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="link menu__link"> Contacts </a>
-            </li>
-          </ul>
-          
-        </nav>
-        <!-- Contacts block. The only address block at present so wrapped with address tag -->
-        <address class="contacts header__contacts">
-          <ul class="list contacts__list">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="link contacts__link">
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+110001111111" class="link contacts__link">
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
-        <button class="menu-button menu-button--pressed" type="button" js-menu-container>
-            <svg aria-label="Mobile menu slider">
-              <use class="menu-button__icon menu-button__icon--open" href="./images/icons.svg#hamburger" js-open-menu></use>
-              <use class="menu-button__icon menu-button__icon--close" href="./images/icons.svg#close-modal" js-close-menu></use>
-            </svg>
+
+        <button
+          class="menu-button"
+          type="button"
+          js-menu-container
+        >
+          <svg class="menu-button__illustration" aria-label="Mobile menu slider">
+            <use
+              class="menu-button__icon menu-button__icon--open"
+              href="./images/icons.svg#hamburger"
+              js-open-menu
+            ></use>
+            <use
+              class="menu-button__icon menu-button__icon--close"
+              href="./images/icons.svg#close-modal"
+              js-close-menu
+            ></use>
+          </svg>
         </button>
-      </div>
+
+        <div class="header__menu-wrapper">
+          <nav class="menu header__menu">
+            <!-- Main navigation -->
+            <ul class="list menu__list">
+              <li class="menu__item">
+                <a
+                  href="./index.html"
+                  class="link menu__link menu__link--current"
+                >
+                  Studio
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="link menu__link">
+                  Portfolio
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link menu__link"> Contacts </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Contacts block. The only address block at present so wrapped with address tag -->
+          <address class="contacts header__contacts">
+            <ul class="list contacts__list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="link contacts__link">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+110001111111" class="link contacts__link">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
       </div>
     </header>
 
@@ -81,7 +97,11 @@
           <h1 class="section__title hero__title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button button--submit hero__button" data-modal-open>
+          <button
+            type="button"
+            class="button button--submit hero__button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -595,33 +615,31 @@
           </li>
           <li class="footer__block">
             <!-- Subscribe block-->
-            
-              <b class="footer__subtitle footer__subtitle--text">Subscribe</b>
 
-              <form action="" class="subscribe-form" name="subscribe-form">
-                <label class="subscribe-form__field">
-                  <input
-                    class="subscribe-form__input"
-                    name="subscribe-field"
-                    type="email"
-                    placeholder=" "
-                    autocomplete="off"
-                  />
-                  <span class="subscribe-form__label">E-mail</span>
-                </label>
-                <button
-                  class="button button--subscribe"
-                  name="subscribe-submit"
-                  type="submit"
-                >
-                  Subscribe
-                  <svg class="button__icon">
-                    <use href="images/icons.svg#plane"></use>
-                  </svg>
-                </button>
-              </form>
+            <b class="footer__subtitle footer__subtitle--text">Subscribe</b>
 
-            
+            <form action="" class="subscribe-form" name="subscribe-form">
+              <label class="subscribe-form__field">
+                <input
+                  class="subscribe-form__input"
+                  name="subscribe-field"
+                  type="email"
+                  placeholder=" "
+                  autocomplete="off"
+                />
+                <span class="subscribe-form__label">E-mail</span>
+              </label>
+              <button
+                class="button button--subscribe"
+                name="subscribe-submit"
+                type="submit"
+              >
+                Subscribe
+                <svg class="button__icon">
+                  <use href="images/icons.svg#plane"></use>
+                </svg>
+              </button>
+            </form>
           </li>
         </ul>
       </div>
@@ -643,11 +661,8 @@
           >Leave your contacts and we will call you back</b
         >
 
-
         <form action="" class="contacts-form" name="contact-form">
-
           <ul class="list contacts-form__fieldset">
-
             <li class="modal__form-item">
               <label class="contacts-form__field">
                 <input
@@ -705,8 +720,6 @@
               </label>
             </li>
 
-
-
             <li class="modal__form-item">
               <label class="checkbox">
                 <input
@@ -727,8 +740,6 @@
               </label>
             </li>
 
-
-
             <li class="modal__form-item modal__form-item--gap_zero">
               <button
                 class="button button--submit contacts-form__button"
@@ -738,9 +749,7 @@
                 Send
               </button>
             </li>
-
           </ul>
-
         </form>
       </div>
     </div>
