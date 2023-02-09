@@ -67,7 +67,6 @@
 .page__container--header {
 
     height: 70px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,6 +82,12 @@
         justify-content: start;
 
     }
+
+    .page__container--clients {
+        padding-right: 108px;
+        padding-left: 108px;
+
+        }
 }
 
 @media (min-width: 1200px) {
@@ -653,7 +658,8 @@
 }
 
 .section__content--clients>* {
-    --elements-in-row: 2;
+    /* --elements-in-row: 2; */
+    flex-basis: auto;
 }
 
 .section__content--filter>* {
