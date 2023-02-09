@@ -671,7 +671,18 @@
 
     .section__content--clients>* {
         --elements-in-row: 3;
+        /* flex-basis: 0; */
+        /* --cards-gap: 16px; */
     }
+
+    /* .section__content--clients:nth-child(4)::before {
+            
+            content: "";
+                flex-basis: 100%;
+                height: 2;
+                border: 1px solid #000;
+            --cards-gap: 16px;
+        } */
 
     .section__content--gallery>* {
         --elements-in-row: 2;
@@ -743,8 +754,19 @@
 
     background-image:
         linear-gradient(var(--hero-background), var(--hero-background)),
-        url("../images/people-office-1400x600-opt.jpg");
+        url("../images/people-office-428x432-opt.jpg");
 }
+
+@media (max-width: 767px) and (min-device-pixel-ratio: 2),
+(max-width: 767px) and (min-resolution: 192dpi),
+(max-width: 767px) and (min-resolution: 2dppx) {
+    .hero__content {
+        background-image:
+            linear-gradient(var(--hero-background), var(--hero-background)),
+            url("../images/people-office-428x432-opt@2x.jpg");
+    }
+}
+
 
 @media (min-width: 768px) {
     .hero__content {
@@ -753,7 +775,17 @@
 
         background-image:
             linear-gradient(var(--hero-background), var(--hero-background)),
-            url("../images/people-office-1400x600-opt.jpg");
+            url("../images/people-office-768x436-opt.jpg");
+    }
+}
+
+@media (min-width: 767px) and (min-device-pixel-ratio: 2),
+(min-width: 767px) and (min-resolution: 192dpi),
+(min-width: 767px) and (min-resolution: 2dppx) {
+    .hero__content {
+        background-image:
+            linear-gradient(var(--hero-background), var(--hero-background)),
+            url("../images/people-office-768x436-opt@2x.jpg");
     }
 }
 
@@ -766,6 +798,16 @@
         background-image:
             linear-gradient(var(--hero-background), var(--hero-background)),
             url("../images/people-office-1400x600-opt.jpg");
+    }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+(min-width: 1200px) and (min-resolution: 192dpi),
+(min-width: 1200px) and (min-resolution: 2dppx) {
+    .hero__content {
+        background-image:
+            linear-gradient(var(--hero-background), var(--hero-background)),
+            url("../images/people-office-1400x600-opt@2x.jpg");
     }
 }
 
@@ -977,8 +1019,9 @@
 .card--client {}
 
 .card__illustration--client {
+    /* can be without min- + flex line breaks, or paddings in container*/
     min-width: 168px;
-    min-height: 88px;
+    height: 88px;
     padding: 4px;
     justify-content: center;
     align-items: center;
