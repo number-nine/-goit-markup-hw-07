@@ -48,8 +48,8 @@
 
 
 .page__container {
-    width: 428px;
-    min-width: 320px;
+    /* width: 428px; */
+    /* min-width: 320px; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -386,7 +386,8 @@
 }
 
 .section__content--clients>* {
-    flex-basis: auto;
+    /* flex-basis: auto; */
+    flex-basis: 168px;
 }
 
 .section__content--filter>* {
@@ -550,7 +551,8 @@
 
 .card__illustration--client {
     /* can be without min- + flex line breaks, or paddings in container*/
-    min-width: 168px;
+    max-width: 168px;
+    
     height: 88px;
     padding: 4px;
     justify-content: center;

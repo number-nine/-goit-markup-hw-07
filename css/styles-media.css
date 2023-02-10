@@ -1,4 +1,6 @@
 @media (max-width: 767px) {
+
+
     .header {
         position: relative;
         z-index: 1;
@@ -33,6 +35,15 @@
         transform: translateY(-105%);
 
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .page__container {
+        max-width: 428px;
+        min-width: 384px
+    }
+
+    .page__container--clients {
+        max-width: 384px;
     }
 
     .menu-button--pressed~.header__menu-wrapper {
