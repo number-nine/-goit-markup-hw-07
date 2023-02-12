@@ -43,7 +43,7 @@
     }
 
     .page__container--clients {
-        max-width: 384px;
+        /* max-width: 384px; */
     }
 
     .menu-button--pressed~.header__menu-wrapper {
